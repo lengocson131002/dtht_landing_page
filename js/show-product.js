@@ -10,7 +10,7 @@
 
   const showProduct = (index) => {
     tabItems.forEach((i, idx) => {
-      tabItems[index].classList.toggle('tab__active');
+      tabItems[index].classList.add('tab__active');
 
       if (idx !== index) {
         tabItems[idx].classList.remove('tab__active');
