@@ -17,13 +17,14 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+  overflow-x: hidden !important;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   transition: all 0.3s;
   color: var(--text);
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 img {
   width: 100%;
@@ -42,6 +43,7 @@ ul {
 .section {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  /* overflow-x: hidden; */
 }
 .col__span--2 {
   grid-column-end: span 2;
@@ -970,7 +972,8 @@ ul {
     justify-content: space-around;
   }
   .benifit__accordion {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
   .product__images--fried ul li {
     width: 20rem;
@@ -1095,6 +1098,8 @@ ul {
     padding-bottom: 0;
   }
 
+  .accordion {
+  }
   .accordion__item {
     margin-bottom: 0.3rem;
   }
